@@ -1,0 +1,8 @@
+p {
+    font-size: 2rem;
+}
+h1 {
+    border: 1px solid darkblue;
+    width: 50%;
+    padding: 0.5em;
+}
