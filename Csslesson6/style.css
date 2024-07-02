@@ -1,0 +1,9 @@
+body {
+    padding: 10%;
+    font-size: 2rem;
+    color: palevioletred;
+}
+input, button {
+    font: inherit;
+    color: inherit;
+}
