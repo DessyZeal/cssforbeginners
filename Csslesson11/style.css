@@ -6,11 +6,9 @@ body {
     font-weight: 700;
     padding: 1rem;
 }
-.block {
+.block img {
     width: 30vw;
     height: 30vw;
-    background-color: purple;
-    color: white;
     padding: 1rem;
 }
 .left {
