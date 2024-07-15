@@ -19,7 +19,8 @@ body {
     justify-content: space-evenly;
     gap: 1rem;
     align-items: center;
-    flex-direction: column;
+    flex-flow: row wrap;
+    align-content: center;
 }
 .box {
     height: 100px;
@@ -28,4 +29,7 @@ body {
     color: white;
     font-size: 2rem;
     padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
