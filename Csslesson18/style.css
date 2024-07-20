@@ -29,6 +29,10 @@ header, footer {
     text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 main {
     flex-grow: 1;
     display: flex;
@@ -55,6 +59,135 @@ header {
 footer {
     bottom: 0;
 }
+.card {
+    scroll-margin-top: 8rem;  
+    width: min(100%, 350px);
+    background-color: #586577;
+    border: 2px solid #1e293b;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card figure {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.card img {
+    border: 5px solid #1e293b;
+    border-radius: 50%;
+}
+.card figcaption {
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 1rem;
+    text-align: center;
+    color: #1e293b;
+}
+
+
+
+@media screen and (min-width: 576px){
+    main {
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+}
+@media screen and (min-width: 768px){
+    nav {
+        display: none;
+    }
+    .card {
+        width: min(100%, 325px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
