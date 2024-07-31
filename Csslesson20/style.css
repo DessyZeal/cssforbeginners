@@ -6,11 +6,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    /* color */
+    --BGCOLOR: #475569;
+    --DARK-COLOR: #000;
+}
 body {
     min-height: 100vh;
     font: 1.5rem "Nunito", sans-serif;
-    background-color: #475569;
-    background-image: radial-gradient(whitesmoke, #475569);
+    background-color: var(--BGCOLOR);
+    background-image: radial-gradient(whitesmoke, var(--BGCOLOR));
     display: flex;
     flex-direction: column;
 }
@@ -30,7 +35,7 @@ main {
 }
 nav {
     background-color: #fff;
-    color: #475569;
+    color: var(--BGCOLOR);
     padding: .5rem;
     border-bottom: 2px solid #475569;
 }
