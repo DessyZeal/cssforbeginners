@@ -75,7 +75,7 @@ footer {
     flex-flow: column nowrap;
 }
 .card img {
-    border: 5px solid #1e293b;
+    border: 5px double #1e293b;
     border-radius: 50%;
 }
 .card figcaption {
@@ -92,6 +92,10 @@ footer {
     main {
         justify-content: center;
         flex-flow: row wrap;
+        padding: 1rem;
+    }
+    .card {
+        width: min(100%, 400px);
     }
 }
 @media screen and (min-width: 768px){
@@ -101,8 +105,15 @@ footer {
     .card {
         width: min(100%, 325px);
     }
+    .card figure {
+        flex-flow: column-reverse;
+    }
 }
-
+@media screen and (min-width: 992px){
+    .card {
+        width: min(100%, 400px);
+    }
+}
 
 
 
