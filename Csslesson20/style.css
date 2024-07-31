@@ -10,6 +10,9 @@
     /* color */
     --BGCOLOR: #475569;
     --DARK-COLOR: #000;
+    /* square */
+    --SQUARE-BGCOLOR: papayawhip;
+    --SQUARE-SIZE: max(150px, 20vw);
 }
 body {
     min-height: 100vh;
@@ -19,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-header, nav, main, footer {
+header, nav, footer {
     display: grid;
     place-content: center;
     grid-template-columns: 100%;
@@ -32,12 +35,32 @@ header, footer {
 }
 main {
     flex-grow: 1;
+
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: min(4vw, 15px);
 }
 nav {
     background-color: #fff;
     color: var(--BGCOLOR);
     padding: .5rem;
     border-bottom: 2px solid #475569;
+}
+.square--highlight {
+    --SQUARE-BGCOLOR: cornflowerblue;
+}
+.square {
+    background-color: var(--SQUARE-BGCOLOR);
+    width: var(--SQUARE-SIZE);
+    height: var(--SQUARE-SIZE);
+    border: 2px solid rgb(31, 29, 29);
+    border-radius: 15px;
+    display: grid;
+    place-content: center;
+    font-size: larger;
 }
 header {
     top: 0;
