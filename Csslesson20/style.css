@@ -14,6 +14,14 @@
     --SQUARE-BGCOLOR: papayawhip;
     --SQUARE-SIZE: max(150px, 20vw);
 }
+@media (prefers-color-scheme: dark) {
+    :root {
+        --BGCOLOR: #000;
+        --ALT-COLOR: #333;
+        --RADIAL-COLOR: rgb(177, 175, 175);
+        --SQUARE-BGCOLOR: rgb(224, 155, 224);
+    }
+}
 body {
     min-height: 100vh;
     font: 1.5rem "Nunito", sans-serif;
@@ -49,7 +57,7 @@ nav {
     padding: .5rem;
     border-bottom: 2px solid #475569;
 }
-.square--highlight {
+.square-highlight {
     --SQUARE-BGCOLOR: cornflowerblue;
 }
 .square {
@@ -60,7 +68,7 @@ nav {
     border-radius: 15px;
     display: grid;
     place-content: center;
-    font-size: larger;
+    font-size: clamp(1.75rem, 3vh, 2.25rem);
 }
 header {
     top: 0;
